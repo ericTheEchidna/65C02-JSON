@@ -2,7 +2,7 @@
 	{
 		"instruction": "ADC",
 		"description": "Add to Accumulator with Carry",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -61,7 +61,7 @@
 	{
 		"instruction": "AND",
 		"description": "AND with Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -120,7 +120,7 @@
 	{
 		"instruction": "ASL",
 		"description": "Arithmetic Shift Left",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -159,7 +159,7 @@
 	{
 		"instruction": "BBR",
 		"description": "Branch On Bit Reset",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -213,7 +213,7 @@
 	{
 		"instruction": "BBS",
 		"description": "Branch On Bit Set",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -267,7 +267,7 @@
 	{
 		"instruction": "BCC",
 		"description": "Branch if Carry Clear",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -286,7 +286,7 @@
 	{
 		"instruction": "BCS",
 		"description": "Branch if Carry Set",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -305,7 +305,7 @@
 	{
 		"instruction": "BEQ",
 		"description": "Branch if Result Zero",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -324,7 +324,7 @@
 	{
 		"instruction": "BIT",
 		"description": "Bit Test with Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "From result",
 			"Carry": "--",
@@ -363,7 +363,7 @@
 	{
 		"instruction": "BMI",
 		"description": "Branch if Result Negative",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -382,7 +382,7 @@
 	{
 		"instruction": "BNE",
 		"description": "Branch if Result Not Zero",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -401,7 +401,7 @@
 	{
 		"instruction": "BPL",
 		"description": "Branch if Result Positive",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -420,7 +420,7 @@
 	{
 		"instruction": "BRA",
 		"description": "Branch Always",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -439,7 +439,7 @@
 	{
 		"instruction": "BRK",
 		"description": "Break / Interrupt",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -458,7 +458,7 @@
 	{
 		"instruction": "BVC",
 		"description": "Branch if Overflow Clear",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -477,7 +477,7 @@
 	{
 		"instruction": "BVS",
 		"description": "Branch if Overflow Set",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -496,7 +496,7 @@
 	{
 		"instruction": "CLC",
 		"description": "Clear Carry",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "Cleared -> 0",
@@ -515,7 +515,7 @@
 	{
 		"instruction": "CLD",
 		"description": "Clear Decimal Mode",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -534,7 +534,7 @@
 	{
 		"instruction": "CLI",
 		"description": "Clear Interrupt Disable",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -553,7 +553,7 @@
 	{
 		"instruction": "CLV",
 		"description": "Clear Overflow",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -572,7 +572,7 @@
 	{
 		"instruction": "CMP",
 		"description": "Compare with Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -631,7 +631,7 @@
 	{
 		"instruction": "CPX",
 		"description": "Compare with X",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -660,7 +660,7 @@
 	{
 		"instruction": "CPY",
 		"description": "Compare with Y",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -689,7 +689,7 @@
 	{
 		"instruction": "DEC",
 		"description": "Decrement by one",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -728,7 +728,7 @@
 	{
 		"instruction": "DEX",
 		"description": "Decrement X by one",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -747,7 +747,7 @@
 	{
 		"instruction": "DEY",
 		"description": "Decrement Y by one",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -766,7 +766,7 @@
 	{
 		"instruction": "EOR",
 		"description": "Exclusive OR with Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -825,7 +825,7 @@
 	{
 		"instruction": "INC",
 		"description": "Increment by one",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -864,7 +864,7 @@
 	{
 		"instruction": "INX",
 		"description": "Increment X by one",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -883,7 +883,7 @@
 	{
 		"instruction": "INY",
 		"description": "Increment Y by one",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -902,7 +902,7 @@
 	{
 		"instruction": "JMP",
 		"description": "Jump",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -931,7 +931,7 @@
 	{
 		"instruction": "JSR",
 		"description": "Jump to Subroutine",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -950,7 +950,7 @@
 	{
 		"instruction": "LDA",
 		"description": "Load Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1009,7 +1009,7 @@
 	{
 		"instruction": "LDX",
 		"description": "Load X",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1048,7 +1048,7 @@
 	{
 		"instruction": "LDY",
 		"description": "Load Y",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1087,7 +1087,7 @@
 	{
 		"instruction": "LSR",
 		"description": "Logical Shift Right",
-		"Flags": {
+		"flags": {
 			"Negative": "Cleared -> 0",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -1126,7 +1126,7 @@
 	{
 		"instruction": "NOP",
 		"description": "No Operation",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1145,7 +1145,7 @@
 	{
 		"instruction": "ORA",
 		"description": "OR with Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1204,7 +1204,7 @@
 	{
 		"instruction": "PHA",
 		"description": "Push Accumulator to Stack",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1223,7 +1223,7 @@
 	{
 		"instruction": "PHP",
 		"description": "Push Status Register to stack",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1242,7 +1242,7 @@
 	{
 		"instruction": "PHX",
 		"description": "Push X to Stack",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1261,7 +1261,7 @@
 	{
 		"instruction": "PHY",
 		"description": "Push Y to Stack",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1280,7 +1280,7 @@
 	{
 		"instruction": "PLA",
 		"description": "Pull Accumulator from Stack",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1299,7 +1299,7 @@
 	{
 		"instruction": "PLP",
 		"description": "Pull Status Register from stack",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -1318,7 +1318,7 @@
 	{
 		"instruction": "PLX",
 		"description": "Pull X from Stack",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1337,7 +1337,7 @@
 	{
 		"instruction": "PLY",
 		"description": "Pull Y from Stack",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1356,7 +1356,7 @@
 	{
 		"instruction": "RMB",
 		"description": "Reset Memory Bit",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1410,7 +1410,7 @@
 	{
 		"instruction": "ROL",
 		"description": "Rotate Left",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -1449,7 +1449,7 @@
 	{
 		"instruction": "ROR",
 		"description": "Rotate Right",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -1488,7 +1488,7 @@
 	{
 		"instruction": "RTI",
 		"description": "Return from Interrupt",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1507,7 +1507,7 @@
 	{
 		"instruction": "RTS",
 		"description": "Return from Subroutine",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1526,7 +1526,7 @@
 	{
 		"instruction": "SBC",
 		"description": "Subtract from Accumulator with Borrow",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "From result",
@@ -1585,7 +1585,7 @@
 	{
 		"instruction": "SEC",
 		"description": "Set Carry",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "Set -> 1",
@@ -1604,7 +1604,7 @@
 	{
 		"instruction": "SED",
 		"description": "Set Decimal Mode",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1623,7 +1623,7 @@
 	{
 		"instruction": "SEI",
 		"description": "Set Interrupt Disable",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1642,7 +1642,7 @@
 	{
 		"instruction": "SMB",
 		"description": "Set Memory Bit",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1696,7 +1696,7 @@
 	{
 		"instruction": "STA",
 		"description": "Store Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1750,7 +1750,7 @@
 	{
 		"instruction": "STP",
 		"description": "Stop",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1769,7 +1769,7 @@
 	{
 		"instruction": "STX",
 		"description": "Store X",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1798,7 +1798,7 @@
 	{
 		"instruction": "STY",
 		"description": "Store Y",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1827,7 +1827,7 @@
 	{
 		"instruction": "STZ",
 		"description": "Store Zero",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -1861,7 +1861,7 @@
 	{
 		"instruction": "TAX",
 		"description": "Transfer Accumulator to X",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1880,7 +1880,7 @@
 	{
 		"instruction": "TAY",
 		"description": "Transfer Accumulator to Y",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1899,7 +1899,7 @@
 	{
 		"instruction": "TRB",
 		"description": "Test and Reset Bits",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "Set if Mem & A == 0",
 			"Carry": "--",
@@ -1923,7 +1923,7 @@
 	{
 		"instruction": "TSB",
 		"description": "Test and Set Bits",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "Set if Mem & A == 0",
 			"Carry": "--",
@@ -1947,7 +1947,7 @@
 	{
 		"instruction": "TSX",
 		"description": "Transfer Stack Pointer to X",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1966,7 +1966,7 @@
 	{
 		"instruction": "TXA",
 		"description": "Transfer X to Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -1985,7 +1985,7 @@
 	{
 		"instruction": "TXS",
 		"description": "Transfer X to Stack Pointer",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -2004,7 +2004,7 @@
 	{
 		"instruction": "TYA",
 		"description": "Transfer Y to Accumulator",
-		"Flags": {
+		"flags": {
 			"Negative": "From result",
 			"Zero": "From result",
 			"Carry": "--",
@@ -2023,7 +2023,7 @@
 	{
 		"instruction": "WAI",
 		"description": "Wait for Interrupt",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
@@ -2042,7 +2042,7 @@
 	{
 		"instruction": "UNP",
 		"description": "Undocumented NOP",
-		"Flags": {
+		"flags": {
 			"Negative": "--",
 			"Zero": "--",
 			"Carry": "--",
