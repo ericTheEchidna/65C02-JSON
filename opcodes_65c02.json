@@ -323,10 +323,10 @@
 	},
 	{
 		"instruction": "BIT",
-		"description": "Bit Test with Accumulator - A ∧ M, M7 → N, M6 → V",
+		"description": "Bit Test with Accumulator - A ∧ M, M7 → N, M6 → V ( the immediate mode BIT operation leaves N and V in undefined state. In practice, on the WDC, they leave both unchanged.)",
 		"flags": {
 			"Negative": "value from bit 7",
-			"Zero": "result of the AND operation between the accumulator and the memory if the result is Zero, Z is reset otherwise.",
+			"Zero": "Result of the AND operation between the accumulator and the memory if the result is Zero, Z is reset otherwise.",
 			"Carry": "--",
 			"Interrupt": "--",
 			"Decimal": "--",
