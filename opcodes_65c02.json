@@ -2040,6 +2040,165 @@
 		}
 	},
 	{
+		"instruction": "SLO",
+		"description": "Shift Left then OR with Accumulator (Undocumented)",
+		"flags": {
+			"Negative": "From result",
+			"Zero": "From result",
+			"Carry": "From result",
+			"Interrupt": "--",
+			"Decimal": "--",
+			"Overflow": "--"
+		},
+		"opcodes": {
+			"0x03": {
+				"address_mode": "(Indirect, X)",
+				"bytes": "2",
+				"cycles": "8"
+			},
+			"0x07": {
+				"address_mode": "Zero Page",
+				"bytes": "2",
+				"cycles": "5"
+			},
+			"0x0f": {
+				"address_mode": "Absolute",
+				"bytes": "3",
+				"cycles": "6"
+			},
+			"0x13": {
+				"address_mode": "(Indirect), Y",
+				"bytes": "2",
+				"cycles": "8"
+			},
+			"0x17": {
+				"address_mode": "Zero Page, X",
+				"bytes": "2",
+				"cycles": "6"
+			},
+			"0x1b": {
+				"address_mode": "Absolute, Y",
+				"bytes": "3",
+				"cycles": "7"
+			},
+			"0x1f": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "7"
+			}
+		}
+	},
+	{
+		"instruction": "RLA",
+		"description": "Rotate Left then AND with Accumulator (Undocumented)",
+		"flags": {
+			"Negative": "From result",
+			"Zero": "From result",
+			"Carry": "From result",
+			"Interrupt": "--",
+			"Decimal": "--",
+			"Overflow": "--"
+		},
+		"opcodes": {
+			"0x23": {
+				"address_mode": "(Indirect, X)",
+				"bytes": "2",
+				"cycles": "8"
+			},
+			"0x27": {
+				"address_mode": "Zero Page",
+				"bytes": "2",
+				"cycles": "5"
+			}
+		}
+	},
+	{
+		"instruction": "ANC",
+		"description": "AND with Accumulator then move bit 7 to Carry (Undocumented)",
+		"flags": {
+			"Negative": "From result",
+			"Zero": "From result",
+			"Carry": "From bit 7",
+			"Interrupt": "--",
+			"Decimal": "--",
+			"Overflow": "--"
+		},
+		"opcodes": {
+			"0x2b": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
+			}
+		}
+	},
+	{
+		"instruction": "JAM",
+		"description": "Halt the CPU (Undocumented)",
+		"flags": {
+			"Negative": "--",
+			"Zero": "--",
+			"Carry": "--",
+			"Interrupt": "--",
+			"Decimal": "--",
+			"Overflow": "--"
+		},
+		"opcodes": {
+			"0x12": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
+			},
+			"0x32": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
+			},
+			"0x52": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
+			}
+		}
+	},
+	{
+		"instruction": "SAX",
+		"description": "Store A AND X in Memory (Undocumented)",
+		"flags": {
+			"Negative": "--",
+			"Zero": "--",
+			"Carry": "--",
+			"Interrupt": "--",
+			"Decimal": "--",
+			"Overflow": "--"
+		},
+		"opcodes": {
+			"0x83": {
+				"address_mode": "(Indirect, X)",
+				"bytes": "2",
+				"cycles": "6"
+			}
+		}
+	},
+	{
+		"instruction": "ISC",
+		"description": "Increment Memory then Subtract with Carry (Undocumented)",
+		"flags": {
+			"Negative": "From result",
+			"Zero": "From result",
+			"Carry": "From result",
+			"Interrupt": "--",
+			"Decimal": "--",
+			"Overflow": "From result"
+		},
+		"opcodes": {
+			"0xff": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "7"
+			}
+		}
+	},
+	{
 		"instruction": "UNP",
 		"description": "Undocumented NOP",
 		"flags": {
@@ -2051,190 +2210,45 @@
 			"Overflow": "--"
 		},
 		"opcodes": {
-			"0x03": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x0b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x13": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x1b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x23": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x2b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x33": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x3b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x43": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x4b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x53": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x5b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x63": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x6b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x73": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x7b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x83": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x8b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x93": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x9b": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xa3": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xab": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xb3": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xbb": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xc3": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xd3": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xe3": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xeb": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xf3": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0xfb": {
-				"address_mode": "Implied",
-				"bytes": "1",
-				"cycles": "1"
-			},
-			"0x02": {
-				"address_mode": "Immediate",
+			"0x04": {
+				"address_mode": "Zero Page",
 				"bytes": "2",
+				"cycles": "3"
+			},
+			"0x0c": {
+				"address_mode": "Absolute",
+				"bytes": "3",
+				"cycles": "4"
+			},
+			"0x14": {
+				"address_mode": "Zero Page, X",
+				"bytes": "2",
+				"cycles": "4"
+			},
+			"0x1a": {
+				"address_mode": "Implied",
+				"bytes": "1",
 				"cycles": "2"
 			},
-			"0x22": {
-				"address_mode": "Immediate",
+			"0x1c": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "4 (+1 if page crossed)"
+			},
+			"0x34": {
+				"address_mode": "Zero Page, X",
 				"bytes": "2",
+				"cycles": "4"
+			},
+			"0x3a": {
+				"address_mode": "Implied",
+				"bytes": "1",
 				"cycles": "2"
 			},
-			"0x42": {
-				"address_mode": "Immediate",
-				"bytes": "2",
-				"cycles": "2"
-			},
-			"0x62": {
-				"address_mode": "Immediate",
-				"bytes": "2",
-				"cycles": "2"
-			},
-			"0x82": {
-				"address_mode": "Immediate",
-				"bytes": "2",
-				"cycles": "2"
-			},
-			"0xc2": {
-				"address_mode": "Immediate",
-				"bytes": "2",
-				"cycles": "2"
-			},
-			"0xe2": {
-				"address_mode": "Immediate",
-				"bytes": "2",
-				"cycles": "2"
+			"0x3c": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "4 (+1 if page crossed)"
 			},
 			"0x44": {
 				"address_mode": "Zero Page",
@@ -2246,30 +2260,95 @@
 				"bytes": "2",
 				"cycles": "4"
 			},
+			"0x5a": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
+			},
+			"0x5c": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "4 (+1 if page crossed)"
+			},
+			"0x64": {
+				"address_mode": "Zero Page",
+				"bytes": "2",
+				"cycles": "3"
+			},
+			"0x74": {
+				"address_mode": "Zero Page, X",
+				"bytes": "2",
+				"cycles": "4"
+			},
+			"0x7a": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
+			},
+			"0x7c": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "4 (+1 if page crossed)"
+			},
+			"0x80": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
+			},
+			"0x82": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
+			},
+			"0x89": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
+			},
+			"0xc2": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
+			},
+			"0xda": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
+			},
 			"0xd4": {
 				"address_mode": "Zero Page, X",
 				"bytes": "2",
 				"cycles": "4"
+			},
+			"0xdc": {
+				"address_mode": "Absolute, X",
+				"bytes": "3",
+				"cycles": "4 (+1 if page crossed)"
+			},
+			"0xe2": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
+			},
+			"0xeb": {
+				"address_mode": "Immediate",
+				"bytes": "2",
+				"cycles": "2"
 			},
 			"0xf4": {
 				"address_mode": "Zero Page, X",
 				"bytes": "2",
 				"cycles": "4"
 			},
-			"0x5c": {
-				"address_mode": "Absolute",
-				"bytes": "3",
-				"cycles": "8"
-			},
-			"0xdc": {
-				"address_mode": "Absolute, X",
-				"bytes": "3",
-				"cycles": "4"
+			"0xfa": {
+				"address_mode": "Implied",
+				"bytes": "1",
+				"cycles": "2"
 			},
 			"0xfc": {
 				"address_mode": "Absolute, X",
 				"bytes": "3",
-				"cycles": "4"
+				"cycles": "4 (+1 if page crossed)"
 			}
 		}
 	}
